@@ -66,3 +66,34 @@ Si on souhaite à la fin de la page dans OpenVPN Clients, on peut télécharger 
 `FireWall`>`Rules`>`Edit`  
 
 ![Capture d'écran 2024-12-03 191112](https://github.com/user-attachments/assets/d36bfbbf-74d3-410a-99ba-890896ea3e8d)
+
+
+![Capture d'écran 2024-12-03 191754](https://github.com/user-attachments/assets/586257d2-d71a-41a9-ad54-30d2b1132238)
+
+
+### Autoriser les flux vers les ressources
+
+Editer une nouvelle règle pour l'interface VPN.
+![Capture d'écran 2024-12-03 192302](https://github.com/user-attachments/assets/4f082e46-f712-4f65-855f-ca3629716a39)
+
+On autorise la machine qui doit se connecter dans le VPN.
+![Capture d'écran 2024-12-03 192525](https://github.com/user-attachments/assets/4eb920fd-5776-4147-b595-6c0c3dbf3867)
+
+
+## Tester l'accès distant depuis un poste client
+
+Télécharger et Installer OpenVPN sur la machine cliente.
+Copier le contenu de l'archive ZIP téléchargé depuis OpenVPN et copier tout dans "C:\Programmes\OpenVPN\Config".  
+Ensuite, sur l'icône OpenVPN effectuez un clic droit et cliquez sur "Connecter".  
+
+Rentrer le username créé dans OpenVPN et le mdp.  
+![Capture d'écran 2024-12-03 193556](https://github.com/user-attachments/assets/e8b00093-c3c0-4ce5-a306-16054fa5d835)  
+
+Lorsque l'icône est verte, la connection est bonne.
+![Capture d'écran 2024-12-03 193630](https://github.com/user-attachments/assets/7777a2e4-c091-4a0d-a051-8141ef5a6de9)
+
+Si l'on effectue un ipconfig sur le PC, nous pouvons voir que l'on a bien une adresse IP sur la plage 10.10.10.0, avec un sous-réseau en /30 pour l'isolation des clients.
+![Capture d'écran 2024-12-03 193859](https://github.com/user-attachments/assets/26bb5114-c5bf-4a14-a935-19121dd55169)
+
+
+
