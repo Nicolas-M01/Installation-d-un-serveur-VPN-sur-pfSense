@@ -53,12 +53,16 @@ Au niveau de la "Topology", remarque très importante à prendre en compte : pou
 
 ## Exporter la configuration OpenVPN
 
-Pour télécharger la configuration au format ".ovpn", il est nécessaire d'installer un paquet supplémentaire sur notre pare-feu. Rendez-vous dans le menu suivant : System > Package Manager > Available Packages.
-Recherchez "openvpn" et installez le paquet : openvpn-client-export.
-Lorsque c'est fait, retournez dans le menu "OpenVPN" puis dans l'onglet "Client Export".
+Pour télécharger la configuration au format ".ovpn", il est nécessaire d'installer un paquet supplémentaire sur notre pare-feu. Rendez-vous dans le menu suivant : System > Package Manager > Available Packages.  
+Recherchez "openvpn" et installez le paquet : openvpn-client-export.  
+Lorsque c'est fait, retournez dans le menu "OpenVPN" puis dans l'onglet "Client Export".  
 
-Si on souhaite à la fin de la page dans OpenVPN Clients, on peut télécharger la configuration. En sélectionnant `Bundled Configurations` et "Archive".
+Si on souhaite à la fin de la page dans OpenVPN Clients, on peut télécharger la configuration. En sélectionnant `Bundled Configurations` et "Archive".  
 ![Capture d'écran 2024-12-03 190529](https://github.com/user-attachments/assets/579942af-91c9-4b4e-bda9-e4285f232983)
 
 
-## Créer les règles de firewall pour OpenVPN
+## Créer les règles de firewall pour OpenVPN  
+
+`FireWall`>`Rules`>`Edit`  
+
+![Capture d'écran 2024-12-03 191112](https://github.com/user-attachments/assets/d36bfbbf-74d3-410a-99ba-890896ea3e8d)
