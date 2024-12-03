@@ -32,4 +32,5 @@ Dans `System`>`User Manager`>`Users`, cliquer sur "Add"
 
 ![Capture d'écran 2024-12-03 110742](https://github.com/user-attachments/assets/0e286ad6-9e11-4336-a5c1-5e8867cce25e)
 
-
+Ensuite une fois enregistré, l'utilisateur apparait dans la liste des utilisateurs de la base locale.
+![Capture d'écran 2024-12-03 111055](https://github.com/user-attachments/assets/504928b7-d460-45e0-9fef-20f675b48e8c)
