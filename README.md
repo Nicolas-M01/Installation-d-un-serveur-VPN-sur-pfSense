@@ -34,3 +34,15 @@ Dans `System`>`User Manager`>`Users`, cliquer sur "Add"
 
 Ensuite une fois enregistré, l'utilisateur apparait dans la liste des utilisateurs de la base locale.
 ![Capture d'écran 2024-12-03 111055](https://github.com/user-attachments/assets/504928b7-d460-45e0-9fef-20f675b48e8c)
+
+## Configurer le serveur OpenVPN
+
+Aller dans `VPN`>`OpenVPN`
+Dans "Servers", cliquer en bas sur "Add".
+La première chose à faire, c'est de choisir le "Server Mode" suivant : Remote Access (SSL/TLS + User Auth).
+Pour le VPN, le protocole s'appuie sur de l'UDP, avec le port 1194 par défaut : je vous recommande d'utiliser un port différent. Pour l'interface, nous allons conserver "WAN" puisque c'est bien par cette interface que l'on va se connecter en accès distant.
+
+Au niveau de la partie chiffrement, un peu plus bas dans la page, vous devez sélectionner votre autorité de certification au niveau du champ "Peer Certificate Authority". En complément, sélectionnez le certificat Server au niveau du champ "Server certificate".
+
+![Capture d'écran 2024-12-03 111755](https://github.com/user-attachments/assets/db246a89-6afd-4b10-bcfa-0769077f14fd)
+
