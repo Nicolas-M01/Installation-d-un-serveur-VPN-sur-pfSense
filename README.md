@@ -57,3 +57,8 @@ Pour télécharger la configuration au format ".ovpn", il est nécessaire d'inst
 Recherchez "openvpn" et installez le paquet : openvpn-client-export.
 Lorsque c'est fait, retournez dans le menu "OpenVPN" puis dans l'onglet "Client Export".
 
+Si on souhaite à la fin de la page dans OpenVPN Clients, on peut télécharger la configuration. En sélectionnant `Bundled Configurations` et "Archive".
+![Capture d'écran 2024-12-03 190529](https://github.com/user-attachments/assets/579942af-91c9-4b4e-bda9-e4285f232983)
+
+
+## Créer les règles de firewall pour OpenVPN
