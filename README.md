@@ -51,3 +51,4 @@ Dans `Redirect IPv4 Gateway`, si on coche `Force all client-generated IPv4 traff
 Dans `Dynamic IP`, si on coche, ça pemret aux clients en DHCP de conserver la connexion au cas où leur adresse change.  
 Au niveau de la "Topology", remarque très importante à prendre en compte : pour des raisons de sécurité, il vaut mieux utiliser la topologie "net30 - isolated /30 network per client" pour que chaque client soit isolé dans un sous-réseau (de la plage réseau VPN) afin que les clients ne puissent pas communiquer entre eux !
 
+## Exporter la configuration OpenVPN
