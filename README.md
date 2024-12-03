@@ -54,5 +54,6 @@ Au niveau de la "Topology", remarque très importante à prendre en compte : pou
 ## Exporter la configuration OpenVPN
 
 Pour télécharger la configuration au format ".ovpn", il est nécessaire d'installer un paquet supplémentaire sur notre pare-feu. Rendez-vous dans le menu suivant : System > Package Manager > Available Packages.
-Recherchez "openvpn" et installez le paquet : openvpn-client-export
+Recherchez "openvpn" et installez le paquet : openvpn-client-export.
+Lorsque c'est fait, retournez dans le menu "OpenVPN" puis dans l'onglet "Client Export".
 
