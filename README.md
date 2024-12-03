@@ -52,3 +52,7 @@ Dans `Dynamic IP`, si on coche, ça pemret aux clients en DHCP de conserver la c
 Au niveau de la "Topology", remarque très importante à prendre en compte : pour des raisons de sécurité, il vaut mieux utiliser la topologie "net30 - isolated /30 network per client" pour que chaque client soit isolé dans un sous-réseau (de la plage réseau VPN) afin que les clients ne puissent pas communiquer entre eux !
 
 ## Exporter la configuration OpenVPN
+
+Pour télécharger la configuration au format ".ovpn", il est nécessaire d'installer un paquet supplémentaire sur notre pare-feu. Rendez-vous dans le menu suivant : System > Package Manager > Available Packages.
+Recherchez "openvpn" et installez le paquet : openvpn-client-export
+
