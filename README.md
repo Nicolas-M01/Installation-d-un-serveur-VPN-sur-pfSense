@@ -42,7 +42,12 @@ Dans "Servers", cliquer en bas sur "Add".
 La première chose à faire, c'est de choisir le "Server Mode" suivant : Remote Access (SSL/TLS + User Auth).
 Pour le VPN, le protocole s'appuie sur de l'UDP, avec le port 1194 par défaut : je vous recommande d'utiliser un port différent. Pour l'interface, nous allons conserver "WAN" puisque c'est bien par cette interface que l'on va se connecter en accès distant.
 
-Au niveau de la partie chiffrement, un peu plus bas dans la page, vous devez sélectionner votre autorité de certification au niveau du champ "Peer Certificate Authority". En complément, sélectionnez le certificat Server au niveau du champ "Server certificate".
+Au niveau de la partie chiffrement, un peu plus bas dans la page, vous devez sélectionner votre autorité de certification au niveau du champ "Peer Certificate Authority". En complément, sélectionnez le certificat Server au niveau du champ "Server certificate".  
+On peut également modifier l'algorythme de chiffrement pour améliorer la sécurité, mais on peut ressentir un lag avec une chiffrement plus complexe.  
+![Capture d'écran 2024-12-03 111755](https://github.com/user-attachments/assets/db246a89-6afd-4b10-bcfa-0769077f14fd)  
 
-![Capture d'écran 2024-12-03 111755](https://github.com/user-attachments/assets/db246a89-6afd-4b10-bcfa-0769077f14fd)
+Il faut paramétrer le réseau du tunnel VPN par exemple : 10.10.10.0/24 (IPv4 Tunnel Network)  
+Dans `Redirect IPv4 Gateway`, si on coche `Force all client-generated IPv4 traffic through the tunnel`, tout le flux de l'IP cliente passera par le tunnel. Dans notre cas, ne pas cocher, puis dans `IPv4 Local network`, rentrer le réseau de l'entreprise que l'on veut accéder par VPN, ici : 192.168.1.0/24  
+Dans `Dynamic IP`, si on coche, ça pemret aux clients en DHCP de conserver la connexion au cas où leur adresse change.  
+Au niveau de la "Topology", remarque très importante à prendre en compte : pour des raisons de sécurité, il vaut mieux utiliser la topologie "net30 - isolated /30 network per client" pour que chaque client soit isolé dans un sous-réseau (de la plage réseau VPN) afin que les clients ne puissent pas communiquer entre eux !
 
